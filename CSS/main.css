@@ -1,0 +1,396 @@
+/* //General property */
+*{
+    list-style: none;
+}
+
+:root{
+    --font-size: 13px;
+}
+html{
+    scroll-padding-top: 51.22px;
+}
+.about, .services, .portfolio, .slider, 
+.blog{
+    padding-block: 64px;
+}
+
+/* Start header section */
+header{
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.5)) ,url(../Images/hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+.navbar .custom-letter-space{
+    letter-spacing: 0.8px;
+}
+.navbar-nav .nav-item .active{
+    position: relative;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-inline: 17px;
+}
+.navbar-nav .nav-item .active::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 18px;
+    bottom: 0;
+}
+
+.navbar-nav .nav-item a{
+    color: white;
+    position: relative;
+}
+.navbar-nav .nav-item a::before{
+    content: "";
+    width: 0%; 
+    height: 2px;
+    background-color: #FFF;
+    position: absolute;
+    left: 18px;
+    bottom: 0;
+    transition: all .5s;
+}
+.navbar-nav .nav-item a:hover::before{
+    width: 50%;
+}
+.nav-item .dropdown-menu{
+    font-size: 14px;
+}
+.nav-item .dropdown-menu a{
+    font-size: 1em;
+    color: rgb(134, 131, 131) !important;
+    font-weight: 500;
+}
+.caption-header{
+    text-align: center;
+}
+.caption-header h1{
+    font-size: 4.5em;
+    font-weight: 600;
+}
+.caption-header h3::after{
+    content: "";
+    animation: typing;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes typing {
+    0%{content: " |";}
+    1%{content: "D|";}
+    2%{content: "De|";}
+    3%{content: "Des|";}
+    4%{content: "Desi|";}
+    5%{content: "Desig|";}
+    6%{content: "Design|";}
+    7%{content: "Designe|";}
+    8%{content: "Designer|";}
+    9%{content: "Designe|";}
+    10%{content: "Design|";}
+    11%{content: "Desig|";}
+    12%{content: "Desi|";}
+    13%{content: "Des|";}
+    14%{content: "De|";}
+    15%{content: "D|";}
+    16%{content: " |";}
+    17%{content: "De|";}
+    18%{content: "Dev|";}
+    19%{content: "Deve|";}
+    20%{content: "Devel|";}
+    21%{content: "Develo|";}
+    22%{content: "Develop|";}
+    23%{content: "Develope|";}
+    24%{content: "Developer|";}
+    25%{content: "Develope|";}
+    26%{content: "Develop|";}
+    27%{content: "Develo|";}
+    28%{content: "Devel|";}
+    29%{content: "Deve|";}
+    30%{content: "Dev|";}
+    31%{content: "De|";}
+    32%{content: "D|";}
+    33%{content: " |";}
+    34%{content: "F|";}
+    35%{content: "Fr|";}
+    36%{content: "Fre|";}
+    37%{content: "Free|";}
+    38%{content: "Freel|";}
+    39%{content: "Freela|";}
+    40%{content: "Freelan|";}
+    41%{content: "Freelanc|";}
+    42%{content: "Freelance|";}
+    43%{content: "Freelancer|";} 
+    44%{content: "Freelance|";}
+    45%{content: "Freelanc|";}
+    46%{content: "Freelan|";}
+    47%{content: "Freela|";}
+    48%{content: "Freel|";}
+    49%{content: "Free|";}
+    50%{content: "Fre|";}
+    51%{content: "Fr|";}
+    52%{content: "F|";}
+    53%{content: " |";}
+    54%{content: "P|";}
+    55%{content: "Ph|";}
+    56%{content: "Pho|";}
+    57%{content: "Phot|";}
+    58%{content: "Photo|";}
+    59%{content: "Photog|";}
+    60%{content: "Photogr|";}
+    61%{content: "Photogra|";}
+    62%{content: "Photograp|";}
+    63%{content: "Photograph|";}
+    64%{content: "Photographe|";}
+    65%{content: "Photographer|";}
+    66%{content: "Photographe|";}
+    67%{content: "Photograph|";}
+    68%{content: "Photograp|";}
+    69%{content: "Photogra|";}
+    70%{content: "Photogr|";}
+    71%{content: "Photog|";}
+    72%{content: "Photo|";}
+    73%{content: "Phot|";}
+    74%{content: "Pho|";}
+    75%{content: "Ph|";}
+    76%{content: "P|";}
+    77%{content: "|";}
+    78%{content: "D|";}
+    79%{content: "De|";}
+    80%{content: "Des|";}
+    81%{content: "Desi|";}
+    82%{content: "Desig|";}
+    83%{content: "Design|";}
+    84%{content: "Designe|";}
+    85%{content: "Designer|";}
+    86%{content: "Designe|";}
+    87%{content: "Design|";}
+    88%{content: "Desig|";}
+    89%{content: "Desi|";}
+    90%{content: "Des|";}
+    91%{content: "De|";}
+    92%{content: "D|";}
+    93%{content: " |";}
+    94%{content: "D|";} 
+    95%{content: "De|";}
+    96%{content: "Dev|";}
+    97%{content: "Deve|";}
+    98%{content: "Devel|";}
+    99%{content: "Develo|";}
+    100%{content: "Develop|";}
+}
+
+@media screen and (max-width: 768px){
+    .caption-header h1{
+        font-size: 2.7em;
+    }
+}
+/* End header section */
+/* Start about section */
+
+.about .container{
+    padding: 64px 48px;
+}
+
+.personal-info .info span{
+    color: #4E4E4E;
+}
+.progress{
+    background-color: #CDE1F8;
+    border-radius:initial;
+}
+.main-h2{
+    position: relative;
+}
+.main-h2::after{
+    content: "";
+    width: 20%; 
+    height: 3px;
+    background-color: #0078FF;
+    position: absolute;
+    left: 0;
+    top: 130%;
+} 
+
+
+/* End about section */
+
+/* Start services section */
+.main-title{
+    text-align: center;
+    position: relative;
+    margin-bottom: 85px;
+}
+.main-title h3{
+    font-size: 48px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #1E1E1E;
+}
+.main-title p{
+    margin-bottom: 16px;
+    color: #4E4E4E;
+}
+.main-title::after{
+    content: "";
+    width: 3%; 
+    height: 5px;
+    background-color: #0078FF;
+    position: absolute;
+    left: 49%;
+    top: 120%;
+}
+
+.card .icon{
+    border: 10px solid #0078FF;
+}
+.service-boxes .card .icon:hover{
+    border-color: #B7E1F3;
+}
+.icon{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+/* End services section */
+
+/* Start Number section */
+.numbers{
+    background-image: linear-gradient(rgba(0, 120, 255, 0.7), rgba(0, 120, 255, 0.7)) ,url(../Images/counters-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:inherit;
+    background-attachment: fixed;
+}
+
+.numbers .icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border-color: #CDE1F8;
+}
+.card .card-body div a{
+text-decoration: none !important;
+font-size: var(--font-size);
+}
+.card .card-body div span{
+font-size: var(--font-size); 
+}
+.card-body .plus-icon{
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    border: 3px solid #0078FF;
+}
+/* End Number section */
+.section-img img{
+    transition: all 1s ease 0s;
+   
+}
+.porto-image:hover img{
+    transform: scale(1.1);
+}
+
+/* Start slider section */
+.slider, .contact{
+    background-image: linear-gradient(rgba(60, 141, 231, 0.7), rgba(60, 141, 231, 0.7)),url(../Images/overlay-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.slider .carousel-indicators [data-bs-target]{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+/* End slider section */
+
+/* Start blog section */
+.blog-boxes .card-body{
+    position: relative;
+}
+.blog-boxes .card-body::before{
+    content: attr(data-before-bottom);
+    width: 65px; 
+    height: 30px;
+    background-color: #0078FF;
+    border-radius: 3px;
+    position: absolute;
+    left: 40%;
+    top: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 9px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.blog-boxes .card-body a{
+    transition: color .2s;
+}
+.blog-boxes .card-body a:hover{
+    color: #0078FF !important;
+}
+.card-details a img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+/* End blog section */
+
+/* Start contact section */
+.contact{
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+.contact form input, .contact form textarea{
+    font-size: 14px;
+}
+.btn-button{
+    width: 35%;
+}
+.btn{
+    padding: 15px;
+    padding-inline: 5px;
+}
+.btn-button button{
+    font-size: 19px;
+}
+.details-list ul{
+    color: gray;
+}
+.details-list ul span{
+    color: #0078FF;
+}
+.second-ul ul li{
+    border: 3px solid #0078FF;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-ul ul li:hover{
+    border-color: #B7E1F3;;
+}
+.second-ul li a i:hover {
+    color: white;
+}
+/* End contact section */
+
+/* Start footer section */
+footer{
+    background-color: #0062D3;
+}
+/* End footer section */
